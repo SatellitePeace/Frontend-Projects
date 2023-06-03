@@ -15,6 +15,7 @@ function submitForm(e) {
     } else {
         formInput.classList.add("error")
         errorMsg.style.display = "block"
+        formInput.focus()
     }
     e.preventDefault()
 }
