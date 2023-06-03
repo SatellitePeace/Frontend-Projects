@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <!-- Form start -->
+      <form action="">
+        <div class="form-group">
+          <!-- DAY -->
+          <div class="day">
+            <label for="day">Day</label>
+            <input type="text" id="day" placeholder="DD" />
+            <small class="error day-error"> Must be a valid day </small>
+          </div>
+          <!-- MONTH -->
+          <div class="month">
+            <label for="month">Month</label>
+            <input type="text" id="month" placeholder="MM" />
+            <small class="error month-error"> Must be a valid month </small>
+          </div>
+          <!-- YEAR -->
+          <div class="year">
+            <label for="year">Year</label>
+            <input type="text" id="year" placeholder="YYYY" />
+            <small class="error year-error"> Must be in the past </small>
+          </div>
+        </div>
+        <div class="btn">
+          <div class="btn-line"></div>
+          <button>
+            <img
+              src="./assets/images/icon-arrow.svg"
+              alt="submit button icon"
+            />
+          </button>
+        </div>
+      </form>
+      <!-- Age Figures Content -->
+      <section>
+        <p><span class="years">-- </span>years</p>
+        <p><span class="month">-- </span>months</p>
+        <p><span class="days">-- </span>days</p>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/SatellitePeace"
+        >Nneoma Njoku</a
+      >.
+    </footer>
+  </body>
+</html>

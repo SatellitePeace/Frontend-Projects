@@ -1,0 +1,134 @@
+/* GOOGLE FONTS */
+  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;700&family=Poppins:ital,wght@1,400;1,700;1,800&family=Roboto:wght@300;400;700&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  border: none;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: hsl(0, 0%, 94%);
+  font-family: sans-serif;
+}
+main {
+  background: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 1.5rem 1.5rem 7rem 1.5rem;
+  min-width: 500px;
+}
+/* FORM STYLES START */
+.form-group {
+  display: flex;
+  gap: 1rem;
+}
+label {
+  color: hsl(0, 1%, 44%);
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: block;
+}
+input {
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 3px;
+  padding: 0.8rem;
+  width: 7rem;
+  margin: 0.2rem 0;
+  font-size: 1.1rem;
+  color: hsl(0, 0%, 8%);
+  font-weight: 600;
+  transition: .2s linear;
+}
+input:focus{
+    border: 1px solid hsl(259, 100%, 65%);
+}
+input::placeholder {
+  font-weight: bold;
+  font-size: 1rem;
+  color: hsl(0, 1%, 44%);
+}
+small{
+    display: block;
+    font-size: .73rem;
+    color: hsl(0, 100%, 67%);
+}
+.btn {
+  margin-top: 1.5rem;
+  position: relative;
+}
+.btn-line {
+  width: 100%;
+  height: 2px;
+  background-color: hsl(0, 0%, 94%);
+}
+button {
+  background: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: -1.5rem;
+  right: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: .2s linear;
+}
+button:hover{
+    background: hsl(0, 0%, 8%);
+}
+button img {
+  width: 2rem;
+}
+/* Content styles start */
+section {
+  margin-top: 1.5rem;
+}
+p {
+  color: hsl(0, 0%, 8%);
+  font-size: 4rem;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+}
+p span {
+  color: hsl(259, 100%, 65%);
+}
+/* FOOTER STYLES STARTS HERE */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* MOBILE RESPONSIVE MEDIA QUERY */
+@media screen and (max-width: 560px) {
+  main {
+    min-width: 300px;
+  }
+  /* FORM STYLES START */
+  input {
+    width: 5.5rem;
+  }
+  small{
+    font-size: .6rem;
+}
+  .btn {
+    margin-top: 2.5rem;
+    position: relative;
+  }
+  button {
+    top: -1.5rem;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  /* Content styles start */
+  section {
+    margin-top: 1.5rem;
+  }
+}
