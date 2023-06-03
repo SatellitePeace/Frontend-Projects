@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/SatellitePeace/Frontend-Projects/tree/main/newsletter-sign-up-with-success-message-main
+- Solution URL:https://github.com/SatellitePeace/Frontend-Projects/tree/main/newsletter-sign-up-with-success-message-main/newsletter-sign-up-with-success-message-main
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ### Built with
@@ -31,4 +31,4 @@ Users should be able to:
 - Desktop-first workflow
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/SatellitePeace)
+- Frontend Mentor - [Nneoma Njoku](https://www.frontendmentor.io/profile/SatellitePeace)
