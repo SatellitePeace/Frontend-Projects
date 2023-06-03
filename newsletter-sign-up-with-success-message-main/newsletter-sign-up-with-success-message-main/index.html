@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <main id="main">
+      <!-- content section -->
+      <div class="main-content">
+        <!-- text content -->
+        <section>
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>
+              <img src="./assets/images/icon-list.svg" alt="icon list" />
+              <span>Product discovery and building what matters</span>
+            </li>
+            <li>
+              <img src="./assets/images/icon-list.svg" alt="icon list" />
+              <span>Measuring to ensure updates are a success</span>
+            </li>
+            <li>
+              <img src="./assets/images/icon-list.svg" alt="icon list" /><span>
+                And much more!</span
+              >
+            </li>
+          </ul>
+        </section>
+        <!-- Sign-up form start -->
+        <form id="form">
+          <div class="form-label">
+            <label for="input">Email address</label>
+            <span class="error-message">valid email required</span>
+          </div>
+          <input
+            type="text"
+            id="input"
+            placeholder=" address email@company.com"
+          />
+          <button>Subscribe to monthly newsletter</button>
+        </form>
+        <!-- Sign-up form end -->
+      </div>
+      <!-- illustration section -->
+      <figure>
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt="sign up illustration"
+          class="desktop"
+        />
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile" class="mobile">
+      </figure>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.frontendmentor.io/profile/SatellitePeace">Nneoma Njoku</a>.
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
