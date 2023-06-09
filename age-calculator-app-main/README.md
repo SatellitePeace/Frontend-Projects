@@ -19,14 +19,11 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 - **Bonus**: See the age numbers animate to their final number when the form is submitted
 
-### Screenshot
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://github.com/SatellitePeace/Frontend-Projects/tree/main/age-calculator-app-main
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
 
 ### Built with
 
@@ -38,28 +35,35 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned a couple of things in this section but what i am must proud of is  how i was ables to shorten the arguements and contents in my if statements. And how i was able to create seperate functions for the error making the code much more cleaner
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+function isValid(day, month, year) {
+    const daysInMonth = getDaysInMonth(month, year);
+
+    if (isNaN(day) || isNaN(month) || isNaN(year)) {
+        return false;
+    }
+
+    if (day < 1 || day > 31) {
+        return false;
+    }
+
+    if (month < 1 || month > 12) {
+        return false;
+    }
+
+    if (year > new Date().getFullYear()) {
+        return false;
+    }
+
+    if (day > daysInMonth) {
+        return false;
+    }
+
+    return true;
 }
 ```
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 

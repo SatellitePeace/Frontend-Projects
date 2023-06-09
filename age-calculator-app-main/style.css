@@ -30,8 +30,9 @@ main {
 }
 label {
   color: hsl(0, 1%, 44%);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 500;
+  text-transform: uppercase;
   display: block;
 }
 input {
@@ -53,10 +54,33 @@ input::placeholder {
   font-size: 1rem;
   color: hsl(0, 1%, 44%);
 }
-small{
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+.input-error{
+  border: 1px solid hsl(0, 100%, 67%);
+}
+input:invalid {
+  border-color: hsl(0, 100%, 67%);
+}
+
+input:invalid::placeholder {
+  color: hsl(0, 100%, 67%);
+}
+
+.label-error{
+  color: hsl(0, 100%, 67%);
+}
+.error{
     display: block;
     font-size: .73rem;
     color: hsl(0, 100%, 67%);
+    display: none;
 }
 .btn {
   margin-top: 1.5rem;
@@ -99,11 +123,11 @@ p span {
 }
 /* FOOTER STYLES STARTS HERE */
 .attribution {
-  font-size: 11px;
+  color: hsl(0, 0%, 8%);
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(259, 100%, 65%);
 }
 
 /* MOBILE RESPONSIVE MEDIA QUERY */
@@ -132,3 +156,4 @@ p span {
     margin-top: 1.5rem;
   }
 }
+
