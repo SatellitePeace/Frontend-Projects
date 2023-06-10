@@ -1,0 +1,190 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  line-height: 1.3rem;
+}
+/* GENERAL STYLES */
+body {
+  min-height: 100vh;
+  font-family: 'League Spartan', sans-serif;
+}
+img {
+  width: 100%;
+  display: block;
+}
+h1,
+h2 {
+  color: hsl(0, 0%, 27%);
+}
+h2 {
+  text-transform: uppercase;
+}
+p {
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 63%);
+}
+/* nav styles */
+nav {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  z-index: 500;
+  /* justify-content: space-evenly; */
+}
+nav p {
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+}
+ul {
+  display: flex;
+  gap: 2rem;
+}
+ul li a {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  
+}
+ul li a:hover{
+    text-decoration: underline;
+}
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  position: relative;
+}
+/* header hero images */
+.hero-images {
+  flex: 1.5;
+  position: relative;
+}
+.img-one,
+.img-two {
+  position: absolute;
+}
+.img-one {
+  z-index: 300;
+}
+.img-two {
+  z-index: 200;
+}
+.img-three {
+  z-index: 100;
+}
+/* HEADER HERO TEXT STYLES */
+.hero-text {
+  flex: 1;
+  position: relative;
+  margin: 3rem 5rem 0 0;
+}
+.first-slide {
+  position: absolute;
+  color: red;
+  z-index: 300;
+}
+.second-slide {
+  position: absolute;
+  z-index: 200;
+  opacity: 0;
+}
+.third-slide {
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+}
+section h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+section p {
+  padding: 1rem 0;
+}
+section button {
+  font-weight: 600;
+  font-size: .8rem;
+  background: transparent;
+  color: hsl(0, 0%, 27%);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  letter-spacing: 0.8rem;
+  cursor: pointer;
+}
+section button:hover{
+    color: hsl(0, 0%, 63%);
+}
+section button img {
+  width: 2.5rem;
+}
+/* SLIDE BUTTON CONTROL STYLES */
+.buttons{
+    position: relative;
+}
+.buttons button {
+  cursor: pointer;
+  background: hsl(0, 0%, 0%);
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  align-items: center;
+bottom: 0;
+  z-index: 500;
+  transition: .2s linear;
+}
+.buttons button img{
+    width: 35%;
+}
+.left{
+right: 43.145%;
+}
+.right{
+    right: 39.2%;
+}
+.buttons button:hover{
+background: hsl(0, 0%, 27%);
+}
+/* MAIN CONTENT STYLES */
+main {
+  display: flex;
+}
+main figure {
+  flex: 1;
+
+}
+
+main h2 {
+  padding-bottom: 1rem;
+}
+main article {
+  flex: 1;
+  padding: 3rem;
+}
+main figure img{
+    height: 100%;
+}
+
+
+  .attribution {
+    font-size: .8rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
