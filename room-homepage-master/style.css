@@ -1,5 +1,5 @@
 /* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap");
 /* CSS RESET */
 *,
 *::before,
@@ -15,7 +15,8 @@
 /* GENERAL STYLES */
 body {
   min-height: 100vh;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
+  overflow-x: hidden;
 }
 img {
   width: 100%;
@@ -24,13 +25,21 @@ img {
 h1,
 h2 {
   color: hsl(0, 0%, 27%);
+  letter-spacing: 5px;
+  margin-top: 2rem;
 }
 h2 {
   text-transform: uppercase;
 }
 p {
   font-size: 0.8rem;
+  line-height: 1.5rem;
   color: hsl(0, 0%, 63%);
+  word-spacing: 0.3rem;
+}
+button {
+  cursor: pointer;
+  background: transparent;
 }
 /* nav styles */
 nav {
@@ -38,14 +47,17 @@ nav {
   gap: 3rem;
   align-items: center;
   position: absolute;
+  position: fixed;
+  background: hsl(0, 0%, 27%);
   top: 1.5rem;
   left: 2rem;
-  z-index: 500;
-  /* justify-content: space-evenly; */
+  z-index: 600;
+  padding: 1rem;
+  border-radius: 2px;
 }
 nav p {
   color: hsl(0, 0%, 100%);
-  font-size: 2rem;
+  font-size: 3rem;
 }
 ul {
   display: flex;
@@ -54,45 +66,44 @@ ul {
 ul li a {
   color: hsl(0, 0%, 100%);
   font-weight: 600;
-  
 }
-ul li a:hover{
-    text-decoration: underline;
+ul li a:hover {
+  text-decoration: underline;
+}
+.hamburger {
+  display: none;
+}
+.hamburger img {
+  width: 2rem;
 }
 /* header */
 header {
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
-  position: relative;
+  gap: 3rem;
+  /* position: relative; */
 }
 /* header hero images */
 .hero-images {
-  flex: 1.5;
+  flex: 2;
   position: relative;
+}
+.hero-images figure img {
+  height: 100%;
+  object-fit: cover;
 }
 .img-one,
 .img-two {
   position: absolute;
 }
-.img-one {
-  z-index: 300;
-}
-.img-two {
-  z-index: 200;
-}
-.img-three {
-  z-index: 100;
-}
 /* HEADER HERO TEXT STYLES */
 .hero-text {
   flex: 1;
   position: relative;
-  margin: 3rem 5rem 0 0;
+  margin: 2rem 4rem 2rem 0;
 }
 .first-slide {
   position: absolute;
-  color: red;
   z-index: 300;
 }
 .second-slide {
@@ -114,7 +125,7 @@ section p {
 }
 section button {
   font-weight: 600;
-  font-size: .8rem;
+  font-size: 0.8rem;
   background: transparent;
   color: hsl(0, 0%, 27%);
   display: flex;
@@ -123,40 +134,40 @@ section button {
   letter-spacing: 0.8rem;
   cursor: pointer;
 }
-section button:hover{
-    color: hsl(0, 0%, 63%);
+section button:hover {
+  color: hsl(0, 0%, 63%);
 }
 section button img {
   width: 2.5rem;
 }
 /* SLIDE BUTTON CONTROL STYLES */
-.buttons{
-    position: relative;
+.buttons {
+  position: relative;
 }
 .buttons button {
   cursor: pointer;
   background: hsl(0, 0%, 0%);
-  width: 3.5rem;
+  width: 4.2rem;
   height: 3.5rem;
   display: flex;
   justify-content: space-around;
   position: absolute;
   align-items: center;
-bottom: 0;
+  top: -1.75rem;
   z-index: 500;
-  transition: .2s linear;
+  transition: 0.2s linear;
 }
-.buttons button img{
-    width: 35%;
+.buttons button img {
+  width: 35%;
 }
-.left{
-right: 43.145%;
+.left {
+  right: 34%;
 }
-.right{
-    right: 39.2%;
+.right {
+  right: 28.8%;
 }
-.buttons button:hover{
-background: hsl(0, 0%, 27%);
+.buttons button:hover {
+  background: hsl(0, 0%, 27%);
 }
 /* MAIN CONTENT STYLES */
 main {
@@ -164,27 +175,135 @@ main {
 }
 main figure {
   flex: 1;
-
 }
-
 main h2 {
   padding-bottom: 1rem;
 }
 main article {
-  flex: 1;
+  flex: 1.2;
   padding: 3rem;
 }
-main figure img{
-    height: 100%;
+main figure img {
+  height: 100%;
+}
+.attribution {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 1rem;
 }
 
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
-  .attribution {
-    font-size: .8rem;
-    text-align: center;
+@media screen and (max-width: 64rem) {
+  /* nav styles */
+  nav {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
+    position: absolute;
+    background: transparent;
+    top: -1rem;
+    left: -1rem;
+  }
+  nav p {
+    padding-top: 2.5rem;
+    transform: translateX(-100%);
+  }
+
+  ul {
+    flex-direction: column;
+    padding: 6rem 2rem 2rem 2rem;
+    gap: 1.5rem;
+    background: hsl(0, 0%, 27%);
+    width: 50vw;
+    height: 100vh;
+    border-radius: 0 5px 5px 0;
+    transform: translateX(-150%);
+    transition: 0.2s ease-in-out;
+  }
+  .open {
+    transform: translateX(0);
+  }
+  ul li a {
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  .hamburger {
+    position: absolute;
+    display: block;
+    z-index: 700;
+    left: 2rem;
+    top: 3.5rem;
+  }
+  /* header */
+  header {
+    flex-direction: column;
+    justify-content: initial;
+    gap: 0;
+    margin-bottom: 18rem;
+  }
+  /* header hero images */
+  .hero-images {
+    flex: 0;
+  }
+
+  /* HEADER HERO TEXT STYLES */
+  .hero-text {
+    flex: 0;
+    position: relative;
+    padding: 2rem;
+    margin: 0 2rem 0 0;
+  }
+
+  section button {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+  }
+  /* SLIDE BUTTON CONTROL STYLES */
+  .buttons button {
+    transform: translate(-1%, -680%);
+    z-index: 1000;
+  }
+  .left {
+    right: 4rem;
+  }
+  .right {
+    right: 0;
+  }
+  /* MAIN CONTENT STYLES */
+  main {
+    flex-direction: column;
+  }
+  main figure {
+    flex: 0;
+  }
+  main article {
+    flex: 0;
+    padding: 2rem;
     margin-top: 2rem;
   }
+}
 
-  .attribution a {
-    color: hsl(228, 45%, 44%);
+@media screen and (max-width: 600px) {
+  section h1 {
+    font-size: 2rem;
+    line-height: 2rem;
   }
+  .buttons button {
+    transform: translate(-1%, -910%);
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .buttons button img {
+    width: 1rem;
+  }
+  .left {
+    right: 7.5%;
+  }
+  main {
+    padding-top: 8rem;
+  }
+}
