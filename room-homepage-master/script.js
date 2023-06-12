@@ -1,6 +1,7 @@
 // VARIABLES
 const menuBtn = document.querySelector(".hamburger")
 const menuItems = document.querySelector("ul")
+
 // EVENT LISTENERS
 
 // Slide listeners
