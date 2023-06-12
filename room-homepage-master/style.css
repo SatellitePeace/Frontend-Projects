@@ -81,7 +81,6 @@ header {
   display: flex;
   justify-content: space-between;
   gap: 3rem;
-  /* position: relative; */
 }
 /* header hero images */
 .hero-images {
@@ -196,6 +195,7 @@ main figure img {
   color: hsl(228, 45%, 44%);
 }
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 64rem) {
   /* nav styles */
   nav {
@@ -286,7 +286,6 @@ main figure img {
     margin-top: 2rem;
   }
 }
-
 @media screen and (max-width: 600px) {
   section h1 {
     font-size: 2rem;
