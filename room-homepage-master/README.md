@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL:(https://github.com/SatellitePeace/Frontend-Projects/tree/main/room-homepage-master)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [earnest-room-homepage.netlify.app](https://earnest-room-homepage.netlify.app/)
 
 
 ### Built with
@@ -42,5 +42,5 @@ Users should be able to:
 ## Author
 
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/SatellitePeace)
+- Frontend Mentor - [Nneoma Njoku](https://www.frontendmentor.io/profile/SatellitePeace)
 
